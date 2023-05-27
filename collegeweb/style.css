@@ -1,0 +1,252 @@
+/* Font */
+@import url("https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,400;1,500&display=swap");
+
+/* Root */
+:root {
+  --main: #ff0000;
+  --box_shadow: 10px 10px 10px -10px rgba(164, 161, 161, 0.7),
+    inset 10px 10px 10px -10px rgba(196, 183, 183, 0.9);
+}
+
+* {
+  font-family: "Besley", serif;
+}
+*::selection {
+  background: var(--main);
+  color: #000;
+}
+body {
+  background: #000;
+  color: #fff;
+}
+.btn {
+  width: 200px;
+  background: var(--main);
+  color: #fff !important;
+  transition: 0.2s ease-in-out;
+}
+.btn:hover {
+  letter-spacing: 0.5px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--main);
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+.content {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.content h6 {
+  font-size: 15px;
+  color: var(--main);
+  font-weight: 800;
+}
+.content h5 {
+  font-size: 30px;
+  font-weight: 900;
+}
+/* Navbar/Header Section Start */
+.navbar {
+  border-bottom: 1px solid #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s ease-in-out;
+}
+.navbar.scroll {
+  background: #000;
+  padding: 10px;
+  border-bottom: none;
+}
+.navbar-brand {
+  color: #fff !important;
+  font-size: 3em;
+  padding: 0 50px;
+  font-weight: 600;
+}
+.navbar-brand span {
+  color: var(--main) !important;
+}
+.navbar-nav {
+  padding: 0 50px;
+  margin-top: 30px;
+}
+.nav-link {
+  color: #fff !important;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+.nav-link:hover,
+.nav-link.active {
+  background: var(--main) !important;
+}
+.customBtn {
+  margin-top: 30px;
+}
+/* Navbar/Header Section End */
+
+/* Home/Hero Section Start */
+.Home {
+  position: relative;
+}
+.Home img {
+  height: 70vh;
+  width: 100%;
+  object-fit: cover;
+}
+.Home .HomeOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  opacity: 0.6;
+}
+.Home .HomeContent {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.Home .HomeContent h6 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.Home .HomeContent p {
+  font-size: 11px;
+  margin: 15px auto;
+}
+/* Home/Hero Section End */
+
+/* Benefits Section Start */
+.benefits {
+  margin: 100px auto;
+}
+.benefits img {
+  height: 600px;
+  object-fit: cover;
+}
+.benefits .col-sm-6 h6 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 10px auto;
+}
+.benefits .col-sm-6 h5 {
+  font-size: 40px;
+  font-weight: 800;
+  margin: 20px auto;
+}
+/* Benefits Section End */
+
+/* Second Header Start */
+.SecondHeader {
+  margin-bottom: 150px;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+    url(images/secondHeader.jpg);
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.SecondHeader .box {
+  margin-top: 60px;
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  height: 300px;
+  transition: 0.2s ease-in-out;
+}
+.SecondHeader .box:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+.SecondHeader .box h6 {
+  font-size: 30px;
+  font-weight: 800;
+}
+.SecondHeader .box p {
+  font-size: 12px;
+  margin-top: 10px;
+}
+/* Second Header End */
+
+/* Courses Section Start */
+.courses {
+  margin-bottom: 150px;
+}
+.courses .box {
+  height: 650px;
+  box-shadow: var(--box_shadow);
+  background: #383838;
+}
+.courses .box img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+.courses .boxContent {
+  padding: 20px;
+}
+.courses .boxContent h6 {
+  font-size: 20px;
+  font-weight: 800;
+}
+.courses .boxContent p {
+  font-size: 12px;
+  margin: 10px auto;
+}
+/* Courses Section End */
+
+/* Pricing Section Start */
+.pricing {
+  margin-bottom: 150px;
+}
+.pricing .box {
+  box-shadow: var(--box_shadow);
+  padding: 20px;
+  text-align: center;
+}
+.pricing .box:hover {
+  cursor: pointer;
+  transform: scale(1.01);
+}
+.pricing .box h6 {
+  font-size: 40px;
+}
+.pricing .box h5 {
+  font-size: 150px;
+}
+.pricing .box p {
+  font-size: 12px;
+}
+/* Pricing Section End */
+/* Contact us Section Start */
+
+.contact {
+  margin-bottom: 150px;
+}
+.contact form {
+  box-shadow: var(--box_shadow);
+  padding: 20px;
+}
+/* Contact us Section End */
+
+/* Footer Start */
+footer {
+  background: var(--main);
+  padding: 20px;
+  text-align: center;
+}
+footer a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+/* Footer End */
